@@ -7,7 +7,7 @@
     --grey-muted: #605a52;
     --field-border: #91897e;
     --white: #fcfaf7;
-    --header-height: 76px;
+    --header-height: 112px;
     --page-width: 1120px;
     --section-radius: 36px;
     --card-radius: 24px;
@@ -79,16 +79,23 @@ h3 {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 48px;
 }
 
 .site-name {
     flex: 0 0 auto;
-    color: var(--grey-dark);
-    font-size: 1.25rem;
-    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.site-logo {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .navigation-list {
@@ -96,8 +103,8 @@ h3 {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px 18px;
+    justify-content: center;
+    gap: 8px 24px;
     list-style: none;
 }
 
@@ -160,9 +167,7 @@ h3 {
 
 .hero-image {
     width: 100%;
-    min-height: 480px;
-    object-fit: cover;
-    object-position: left center;
+    height: auto;
 }
 
 .hero-text p {
@@ -173,6 +178,16 @@ h3 {
     width: 100%;
     height: auto;
     border-radius: var(--card-radius);
+}
+
+.teacher-presentation {
+    margin-top: 40px;
+}
+
+.teacher-quote {
+    margin: 20px 0 32px;
+    padding-left: 24px;
+    border-left: 3px solid var(--grey-medium);
 }
 
 .intro-text {
@@ -436,28 +451,20 @@ textarea:focus {
 
 @media (max-width: 900px) {
     :root {
-        --header-height: 116px;
+        --header-height: 180px;
     }
 
     .header-content {
         padding: 14px 0;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        gap: 4px;
-    }
-
-    .navigation-list {
-        justify-content: flex-start;
+        gap: 12px;
     }
 
     .hero-grid,
     .two-column-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero-image {
-        min-height: 360px;
     }
 
     .card-grid {
@@ -471,7 +478,7 @@ textarea:focus {
 
 @media (max-width: 620px) {
     :root {
-        --header-height: 168px;
+        --header-height: 200px;
         --section-radius: 24px;
         --card-radius: 18px;
     }
@@ -503,10 +510,6 @@ textarea:focus {
     .hero-grid,
     .two-column-grid {
         gap: 28px;
-    }
-
-    .hero-image {
-        min-height: 250px;
     }
 
     .team-grid {
