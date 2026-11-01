@@ -125,7 +125,8 @@ Les photos actuellement utilisées sont :
 
 | Emplacement | Fichier dans le dossier `images/` | Référence dans `index.html` |
 | --- | --- | --- |
-| Accueil | `yoga a la maison.jpg` | `images/yoga%20a%20la%20maison.jpg` |
+| Logo de l’en-tête | `Logo.jpeg` | `images/Logo.jpeg` |
+| Accueil | `Photo présentation.jpeg` | `images/Photo%20pr%C3%A9sentation.jpeg` |
 | Présentation | `présentation.jpg` | `images/pr%C3%A9sentation.jpg` |
 
 Les séquences `%20` et `%C3%A9` représentent respectivement un espace et un `é` dans l’adresse de l’image. Les fichiers sur votre ordinateur conservent leurs noms normaux.
